@@ -10,3 +10,4 @@ This repository contains the code for examples in the paper [Weak Adversarial Ne
 * The code in this repository was written by 'python 3.6' and [Tensorflow1](https://www.tensorflow.org/).
 * One should keep it in mind that the parameters provided in this code may not efficiently work for different types of problems. So one may need readjust parameters when use this code for solving different problems.
 * In recent experiments, we found that several modifications can improve the efficiency of the algorithm. For example, using the [ResNet](https://arxiv.org/abs/1512.03385) for parameterizing the trial function and test function rather than using the Fully Connected Feedforward Network and optimizing the primal network with the 'Adam' optimizer.
+* Thanks to the original author!

@@ -1,4 +1,4 @@
-#tensorflow2.X中可以运行，虽然还有报错，但不影响模型结果
+#tensorflow2.X中可以运行，虽然还有报错，但不影响模型结果#
 
 import os
 os.environ["CUDA_DEVICES_ORDER"]= "PCI_BUS_IS"
@@ -118,7 +118,7 @@ class pde_wan():
         self.iteration=  20001
         self.dim= dim
 
-        self.dir = file_path   #项目下新建文件夹，保存图像及数据
+        self.dir = file_path   #项目下新建文件夹，保存图像及数据（其实好像也不需要这个）#
 
 
     def sample_train(self, dm_size, bd_size, dim):
@@ -376,7 +376,7 @@ class pde_wan():
 
 if __name__=='__main__':
     dim, beta, N_int, N_bd= 10,  40000000, 40000, 200
-    file_path ='./WAN_nonlinear/'   #此文件夹中建立figure_err，figure_u,figure_v文件夹，保存图像
+    file_path ='./WAN_nonlinear/'   #此文件夹中建立figure_err，figure_u,figure_v文件夹，保存图像#
     demo= pde_wan(dim, beta, N_int, N_bd,file_path)
     mesh, test_x, test_u, pred_u, step, error_l2, error_l2r,loss_u= demo.train()
     # save data as .mat form
